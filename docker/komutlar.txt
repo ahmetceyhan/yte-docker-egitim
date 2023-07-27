@@ -1,0 +1,9 @@
+docker build -t html-image:v1 .
+docker images
+docker tag 1a46d36e58d6 ahmetceyhan/html-image:v1
+docker push ahmetceyhan/html-image:v1
+docker run -d -p 8080:80 ahmetceyhan/html-image:v1
+docker ps
+
+docker compose up -d    
+docker compose down              

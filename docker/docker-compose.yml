@@ -1,0 +1,6 @@
+version: '3.8'
+services:
+  web:
+    image: html-image:v1
+    ports:
+      - "8080:80"
